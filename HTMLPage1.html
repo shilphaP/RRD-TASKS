@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&display=swap">
+
+</head>
+<body>
+    <div class="vertical">
+        <h1 style="margin:40px;">WHEELS</h1>
+    </div>
+    </br></br>
+    <p class="des" style="margin:10px;">
+        <i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            </br>
+            dignissimos. Modi animi quam architecto, deleniti ipsum porro voluptatum dolorum fuga, ad et tempora laborum fugiat magnam, quidem aut reiciendis libero!
+        </i>
+    </p>
+    <div>
+        
+        <div class="slideshow-container" style="margin:90px">
+
+            <div class="mySlides fade">
+                <div class="mySlidesfade1">
+
+                    <div class="mySlidesfade">
+                        <img src="wgu.png" style="width: 300px; height: 300px; margin: 10px">
+                        <br />
+                        <div style="text-align: center; width: 330px; height: 300px">
+                            <b>17 INCH CAST ALLUMINIUM WHEEL ,FULLY PAINTED SILVER LITHO </b>
+                            <p>Standard on Touring FWD </p>
+                            <p><b> (WGU)</b> </p>
+
+                        </div>
+                    </div>
+                    <div class="mySlidesfade">
+                        <img src="wjr.png" style="width: 300px; height: 300px; margin: 10px">
+                        <br />
+                        <div style="text-align: center; width: 330px; height: 300px">
+                            <b>17 INCH CAST ALLUMINIUM DIAMOND CUT WHEEL WITH BALTIC GRAY POCKETS</b>
+                            <p>Standard on Touring LFWD/Hybrid and Touring Hybrid </p>
+                            <p><b> (WJR)</b> </p>
+
+                        </div>
+                    </div>
+                    <div class="mySlidesfade">
+                        <img src="wp6.png" style="width: 300px; height: 300px; margin: 10px">
+                        <br />
+                        <div style="text-align: center; width: 330px; height: 300px">
+                            <b>17 INCH CAST ALLUMINIUM WHEEL WITH FORESHADOW FINISH</b>
+                            <p>Included with S apperance package on Touring hybrid,Touring L Hybrid and Limited hybrid </p>
+                            <p><b> (WP6)</b> </p>
+
+                        </div>
+                    </div>
+
+	
+       			 <a id="next1" class="next" onclick="plusSlides1(1)">❯</a>
+
+
+                </div>
+
+            </div>
+
+            <div class="mySlides fade">
+
+               <a class="prev" onclick="plusSlides(-1)" id="prev1">❮</a>
+		 <div class="mySlidesfade1">
+                    <div class="mySlidesfade">
+                        <img src="wgu.png" style="width: 300px; height: 300px; margin: 10px">
+                        <br />
+                        <div style="text-align: center; width: 330px; height: 300px">
+                            <b>17 INCH CAST ALLUMINIUM DIAMOND CUT WHEEL WITH BALTIC GRAY POCKETS</b>
+                            <p>Standard on Touring LFWD/Hybrid and Touring Hybrid </p>
+                            <p><b> (WP1)</b> </p>
+
+                        </div>
+                    </div>
+                    <div class="mySlidesfade">
+                        <img src="wgu.png" style="width: 300px; height: 300px; margin: 10px">
+                        <br />
+                        <div style="text-align: center; width: 330px; height: 300px">
+                            <b>17 INCH CAST ALLUMINIUM WHEEL WITH FORESHADOW FINISH</b>
+                            <p>Included with S apperance package on Touring hybrid,Touring L Hybrid and Limited hybrid </p>
+                            <p><b> (WJR)</b> </p>
+
+                        </div>
+                    </div>
+                    <div class="mySlidesfade">
+                        <img src="wgu.png" style="width: 300px; height: 300px; margin: 10px">
+                        <br />
+                        <div style="text-align: center; width: 330px; height: 300px">
+                            <b>18 Inch Cast Alluminium steel with foreshadow finish</b>
+                            <p>Standard on Touring LFWD </p>
+                            <p><b> (WP6)</b> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <br>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+	document.getElementById("prev1").disabled=true;
+
+        }
+        function plusSlides1(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+		
+            if (n > slides.length) { slideIndex = 1 }
+
+
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
